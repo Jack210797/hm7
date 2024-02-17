@@ -33,6 +33,11 @@ img {
   height: 150px;
 }
 
+.inline-pic {
+  width: 170px;
+  height: 100px;
+}
+
 .img,
 .img4 {
   float: right;
