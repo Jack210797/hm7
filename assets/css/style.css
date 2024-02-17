@@ -34,13 +34,17 @@ img {
 }
 
 .img,
-.img7 {
+.img4 {
   float: right;
 }
 
 .img2,
-.img6 {
+.img5 {
   float: left;
+}
+
+.img3 {
+  clear: left;
 }
 
 .size {
