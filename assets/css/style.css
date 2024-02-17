@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  border: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+div,
+span,
+p,
+.sticky {
+  border: 2px solid #000;
+  margin: 10px 40px;
+  padding: 8px 5px;
+}
+
+span {
+  padding: 0px 6px;
+  margin: 0px 21px;
+}
+
+img {
+  width: 300px;
+  height: 150px;
+}
+
+.img,
+.img7 {
+  float: right;
+}
+
+.img2,
+.img6 {
+  float: left;
+}
+
+.size {
+  background-color: aqua;
+  max-width: 81%;
+  height: 150px;
+  overflow: scroll;
+  position: absolute;
+  margin: 10px 37px;
+}
+
+.static,
+.sticky {
+  display: flex;
+  position: static;
+  height: 50px;
+  background-color: bisque;
+  font-size: 24px;
+  text-transform: uppercase;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.absolut {
+  border: none;
+}
+
+.absolut-pic {
+  position: absolute;
+  width: 700px;
+  height: 350px;
+  opacity: 0.5;
+  z-index: -1;
+  top: 350px;
+  right: 350px;
+  bottom: 350px;
+  left: 350px;
+}
+
+.nav {
+  background-color: #8f8f8f;
+  border: none;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  width: 90%;
+  opacity: 0.9;
+  box-shadow: 3px 4px 32px black;
+  height: 90px;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+}
+
+.navbutton {
+  background-color: rgb(169, 166, 166);
+  padding: 13px 20px;
+  margin: -5px 12px;
+  box-shadow: 3px 4px 32px rgb(224, 218, 218);
+  border: 0.5px solid rgb(224, 218, 218);
+  border-radius: 10px;
+}
+
+.sticky {
+  position: sticky;
+}
