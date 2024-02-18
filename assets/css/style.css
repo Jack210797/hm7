@@ -2,30 +2,49 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 90%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 100px;
-  border: none;
-}
-
 body {
   background-color: rgb(255, 255, 255);
   text-align: center;
 }
-div,
-span,
-p,
-.sticky {
-  border: 2px solid #000;
-  margin: 10px 40px;
-  padding: 8px 5px;
+
+.container {
+  width: min(100% - 40px, 1340px);
+  margin-inline: auto;
+  margin-top: 120px;
+}
+
+.bg-image {
+  background-image: url(../../img/Vp9WvV7YKdH4k8sKRePcE8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(180, 177, 177);
+  opacity: 0.7;
 }
 
 span {
   padding: 0px 6px;
   margin: 0px 21px;
+}
+
+.a {
+  text-decoration: none;
 }
 
 img {
@@ -54,11 +73,9 @@ img {
 
 .size {
   background-color: aqua;
-  max-width: 81%;
   height: 150px;
   overflow: scroll;
-  position: absolute;
-  margin: 10px 37px;
+  border: 2px solid black;
 }
 
 .static,
@@ -71,10 +88,7 @@ img {
   text-transform: uppercase;
   justify-content: space-around;
   align-items: center;
-}
-
-.absolut {
-  border: none;
+  border-radius: 10px;
 }
 
 .absolut-pic {
@@ -83,38 +97,54 @@ img {
   height: 350px;
   opacity: 0.5;
   z-index: -1;
-  top: 350px;
-  right: 350px;
-  bottom: 350px;
-  left: 350px;
+  top: 150px;
+  right: 150px;
+  bottom: 150px;
+  left: 150px;
 }
 
 .nav {
-  background-color: #8f8f8f;
-  border: none;
-  color: rgb(255, 255, 255);
+  background-color: #9da1a8;
+  width: 100%;
   position: fixed;
-  width: 90%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   opacity: 0.9;
-  box-shadow: 3px 4px 32px black;
-  height: 90px;
+  box-shadow: 3px 4px 32px rgb(255, 255, 255);
+  height: 83px;
+  padding: 5px 15px;
+  margin: 0px 2px;
 }
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-transform: uppercase;
 }
 
 .navbutton {
-  background-color: rgb(169, 166, 166);
   padding: 13px 20px;
   margin: -5px 12px;
-  box-shadow: 3px 4px 32px rgb(224, 218, 218);
-  border: 0.5px solid rgb(224, 218, 218);
+  box-shadow: 3px 4px 32px rgb(59 57 57);
+  border: 0.5px solid rgb(135 121 121);
   border-radius: 10px;
+  transition: 0.25s;
+}
+
+.navbutton:hover {
+  background-color: rgb(97, 97, 98);
+  font-weight: bolder;
+  box-shadow: 3px 4px 32px rgb(172, 168, 168);
+  font-size: 20px;
+  transform: scale(1.2) translateY(-5px);
+}
+
+.navbutton:active {
+  color: black;
 }
 
 .sticky {
