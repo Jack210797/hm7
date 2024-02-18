@@ -43,6 +43,16 @@ span {
   margin: 0px 21px;
 }
 
+span > a {
+  border: 2px solid black;
+  transition: 0.25s;
+}
+
+span > a:hover {
+  font-size: 18px;
+  transform: scale(1.2) translateY(-5px);
+}
+
 .a {
   text-decoration: none;
 }
@@ -141,10 +151,6 @@ img {
   box-shadow: 3px 4px 32px rgb(172, 168, 168);
   font-size: 20px;
   transform: scale(1.2) translateY(-5px);
-}
-
-.navbutton:active {
-  color: black;
 }
 
 .sticky {
